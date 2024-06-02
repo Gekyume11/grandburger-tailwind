@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandBurger-k & D | Tailwind</title>
+    <link rel="icon" type="png" href="https://gekyume11.github.io/brgr/favicon.png">
+    <link rel="stylesheet" crossorigin href="style.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script defer src="main.js"></script>
+</head>
+<body class="body overflow-x-hidden font-Poppins">
+    
+    <main class="main relative bg-[url('https://gekyume11.github.io/brgr/hero-bg.png')] z-10 transition-transform duration-500">
+        <header class="flex justify-between items-center">
+            <a href="index.html" class="logo px-567:w-[250px] px-368:w-[200px] fold:w-[175px] w-[150px]">
+                <img class="w-full" src="https://gekyume11.github.io/brgr/logo.png">
+            </a>
+            <nav class="lg:flex hidden gap-9">
+                <a class="one text-golden" href="#">home</a>
+                <a class="two" href="#">our menus</a>
+                <a class="three" href="#">about</a>
+                <a class="four" href="#">order online</a>
+                <a class="five" href="#">find us</a>
+            </nav>
+            
+            <span class="menu-btn lg:hidden">
+                <div class="hamburger-menu relative h-[23px] w-[40px] transition-all duration-200 cursor-pointer">
+                    <span class="top absolute transition-transform duration-300 top-0 left-0 h-[2px] w-full bg-white"></span>
+                    <span class="middle absolute transition-transform duration-300 top-0 left-0 h-[2px] w-full bg-white translate-y-[10px]"></span>
+                    <span class="bottom absolute transition-transform duration-300 top-0 left-0 h-[2px] w-full bg-white translate-y-[20px]"></span>
+                </div>
+            </span>
+        </header>
+
+        <div class="main-img absolute left-1/2 top-1/2 -translate-x-1/2 px-400:-translate-y-[30%] -translate-y-1/2">
+            <img class="animate-floating" src="https://gekyume11.github.io/brgr/hero-main.png">
+        </div>
+
+        <div class="w-full flex justify-between items-center absolute left-0 bottom-0 lg:px-16 md:px-10 px-[15px] text-white pb-5">
+            <div class="left">
+                <h1 class="font-semibold mb-1">THE VEGGIE BURGER</h1>
+                <p class="px-400:text-lg max-w-[420px] leading-[1.5]">roses are red, violets are blue. the burger costs less than dinner for two, hahahaha !!</p>
+            </div>
+            <div class="right md:block hidden">
+                <h1 class="text-3xl">sauce</h1>
+                <p class="font-Pacifico text-3xl">orignal</p>
+            </div>
+        </div>
+
+
+
+    </main>
+    <menu class="menu absolute top-0 right-0 bg-white h-dynamic w-[220px] grid place-items-center transition-all duration-500">
+        <ul class="space-y-5">
+            <li><a class="text-xl text-golden" href="#">home</a></li>
+            <li><a class="text-xl text-black" href="#">our menus</a></li>
+            <li><a class="text-xl text-black" href="#">about</a></li>
+            <li><a class="text-xl text-black" href="#">order online</a></li>
+            <li><a class="text-xl text-black" href="#">find us</a></li>
+        </ul>
+    </menu>
+
+    <section class="burgers lg:gap-10 md:gap-20 gap-16 lg:py-0 md:py-20 py-16 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+        <div class="lg:h-100 flex flex-col items-center justify-center text-center normal lg:scale-[.8]">
+            <p class="title">
+                Don't Need A Silver Fork To Eat A Good Burger
+            </p>
+            <img class="my-6 max-w-[370px]" src="https://gekyume11.github.io/brgr/burger-1.png">
+            <h1 class="sub-title text-white leading-[1.1] font-bold">TIKKI<br>BURGER</h1>
+            <p class="text-silver mt-4">Life is like a burger the more you add<br>to it, the better it become.</p>
+        </div>
+        <div class="lg:h-100 flex flex-col items-center justify-center text-center middle">
+            <p class="title middle-txt">
+                OUR BURGERS
+            </p>
+            <img class="my-6 max-w-[370px]" src="https://gekyume11.github.io/brgr/burger-2.png">
+            <h1 class="sub-title text-white leading-[1.1] font-bold">CHILLI<br>BURGER</h1>
+            <p class="text-silver mt-4">Burger for the body is not enough<br>there must be a burger for the soul.</p>
+        </div>
+        <div class="lg:h-100 lg:col-span-1 md:col-span-2 flex flex-col items-center justify-center text-center normal lg:scale-[.8]">
+            <p class="title">
+                Don't Need A Silver Fork To Eat A<br>Good Burger
+            </p>
+            <img class="my-6 max-w-[370px]" src="https://gekyume11.github.io/brgr/burger-3.png">
+            <h1 class="sub-title text-white leading-[1.1] font-bold">TIKKI<br>BURGER</h1>
+            <p class="text-silver mt-4">roses are red, violets are blue. the<br>burger costs less than dinner for two</p>
+        </div>
+    </section>
+    
+    <section class="lg:grid-cols-3 md:grid-cols-2 grid-cols-1 p-0 menus">
+        <div class="lg:h-100 md:block hidden bg-[url('https://gekyume11.github.io/brgr/pizza.png')] bg-center bg-no-repeat bg-cover first"></div>
+        <div class="lg:h-100 flex flex-col justify-center bg-white lg:p-14 md:py-10 md:px-8 py-10 px-[20px] second">
+            <h1>OUR</h1>
+            <h2>MENUS</h2>
+            <p class="my-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam itaque suscipit laudantium, sed nulla quasi eligendi. Facere et voluptas quibusdam odio illum a aperiam, dolorem alias dolores at neque ex quidem fugiat omnis reprehenderit vero? Repellat eum nemo asperiores laboriosam.</p>
+            <a class="btn bg-goldBtn hover:bg-goldBtn-hover" href="#">VIEW MENUS</a>
+        </div>
+        <div class="lg:h-100 lg:col-span-1 md:col-span-2 flex flex-col justify-center bg-[#e7e7e7] lg:p-14 md:py-10 md:px-8 py-10 px-[20px] third">
+            <h1>ORDER</h1>
+            <h2>ONLINE</h2>
+            <p class="my-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam itaque suscipit laudantium, sed nulla quasi eligendi. Facere et voluptas quibusdam odio illum a aperiam, dolorem alias dolores at neque ex quidem fugiat omnis reprehenderit vero? Repellat eum nemo asperiores laboriosam.</p>
+            <a class="btn bg-blackBtn hover:bg-blackBtn-hover" href="#">ORDER ONLINE</a>
+        </div>
+    </section>
+
+    <section class="lg:grid-cols-5 md:grid-cols-2 grid-cols-1 p-0 sauce">
+        <div class="lg:h-100 col-span-2 lg:block hidden bg-[url('https://gekyume11.github.io/brgr/sauce.png')] bg-center bg-no-repeat bg-cover fourth"></div>
+        <div class="lg:h-100 flex flex-col items-center justify-center textcenter lg:col-span-3 bg-white lg:p-12 md:py-10 py-12 px-[20px] fifth">
+            <div class="flex items-center w-full md:mb-7 mb-5 text-blackBtn">
+                <span class="flex-1 h-[2px] bg-blackBtn"></span>
+                <span class="text-3xl font-medium px-4">PRESENTS</span>
+                <span class="flex-1 h-[2px] bg-blackBtn"></span>
+            </div>
+            <h1 class="font-bold leading-[1]">TOMATO</h1>
+            <h2 class="font-bold leading-[1]">ORIGNAL</h2>
+            <h3 class="font-Pacifico text-sauce font-semibold">Sauce</h3>
+            <p class="font-bold text-lg md:my-10 my-8">OUR SIGNATURE HANDMADE TOMATO SAUCE</p>
+            <p class="text-center max-w-[430px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sint, fugit quam, sunt laudantium corrupti in temporibus voluptatibus necessitatibus voluptates deserunt labore nulla officiis possimus error, laboriosam accusantium excepturi pariatur neque repellendus eligendi amet saepe. Omnis in eaque quasi saepe.</p>
+        </div>
+        <div class="lg:h-100 lg:hidden flex flex-col items-center justify-center textcenter lg:col-span-3 lg:p-12 md:py-10 py-12 px-[20px] text-white sixth">
+            <div class="flex items-center w-full md:mb-7 mb-5 text-white">
+                <span class="flex-1 h-[2px] bg-white"></span>
+                <span class="text-3xl font-medium px-4">ALWAYS</span>
+                <span class="flex-1 h-[2px] bg-white"></span>
+            </div>
+            <h1 class="font-bold leading-[1] text-salad">FRESH</h1>
+            <h2 class="font-bold leading-[1]">SALAD</h2>
+            <p class="font-bold text-lg md:my-10 my-8">OUR SIGNATURE HANDMADE TOMATO SAUCE</p>
+            <p class="text-center max-w-[430px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sint, fugit quam, sunt laudantium corrupti in temporibus voluptatibus necessitatibus voluptates deserunt labore nulla officiis possimus error, laboriosam accusantium excepturi pariatur neque repellendus eligendi amet saepe. Omnis in eaque quasi saepe.</p>
+        </div>
+    </section>
+
+    <section class="lg:grid-cols-5 lg:grid hidden p-0 sauce">
+        <div class="lg:h-100 flex flex-col items-center justify-center textcenter lg:col-span-3 lg:p-12 md:py-10 py-12 px-[20px] text-white sixth">
+            <div class="flex items-center w-full md:mb-7 mb-5 text-white">
+                <span class="flex-1 h-[2px] bg-white"></span>
+                <span class="text-3xl font-medium px-4">ALWAYS</span>
+                <span class="flex-1 h-[2px] bg-white"></span>
+            </div>
+            <h1 class="font-bold leading-[1] text-salad">FRESH</h1>
+            <h2 class="font-bold leading-[1]">SALAD</h2>
+            <p class="font-bold text-lg md:my-10 my-8">OUR SIGNATURE HANDMADE TOMATO SAUCE</p>
+            <p class="text-center max-w-[430px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sint, fugit quam, sunt laudantium corrupti in temporibus voluptatibus necessitatibus voluptates deserunt labore nulla officiis possimus error, laboriosam accusantium excepturi pariatur neque repellendus eligendi amet saepe. Omnis in eaque quasi saepe.</p>
+        </div>
+        <div class="lg:h-100 col-span-2 bg-[url('https://gekyume11.github.io/brgr/salad.png')] bg-center bg-no-repeat bg-cover seventh"></div>
+    </section>
+
+    <section class="grid-cols-1 sunday lg:h-dynamic md:h-[60dvh] px-567:h-[45dvh] fold:h-[40dvh] h-[35dvh] text-white py-10 px-[20px]">
+        <h1 class="font-bold flex items-start justify-center" id="sunday-text"><span class="pe-4 md:pt-12 md:pb-8 md:leading-[0] border-b-2 boreder-white">THE</span>SUPER SUNDAY</h1>
+    </section>
+
+    <section class="md:grid-cols-2 grid-cols-1 gap-5 h-auto py-12 text-white email">
+        <div class="md:col-span-2 flex items-center w-full md:mb-7 mb-5 text-golden eight">
+            <span class="flex-1 h-[2px] bg-golden"></span>
+            <span class="px-400:text-3xl text-2xl font-medium px-400:px-4 px-2">SUBSCRIBE NOW</span>
+            <span class="flex-1 h-[2px] bg-golden"></span>
+        </div>
+        <div>
+            <p class="md:text-end text-center ninth">Subscribe now to receive fresh<br>deals & offers by email.</p>
+        </div>
+        <div class="flex items-center md:justify-start justify-center tenth">
+            <input class="p-2 rounded mr-3 px-400:w-fit w-[120px]" type="email" placeholder="Email">
+            <a class="py-2 px-4 transition-colors duration-300 bg-goldBtn rounded hover:bg-goldBtn-hover" href="#">Sign Up</a>
+        </div>
+    </section>
+
+    <footer class="grid md:grid-cols-2 grid-cols-1 lg:px-16 md:px-10 px-[12px] py-16">
+        <div class="md:col-span-2 flex justify-center mb-16">
+            <a href="index.html" class="footer-1 px-567:w-[250px] px-368:w-[200px] fold:w-[175px] w-[150px]">
+                <img class="w-full invert" src="https://gekyume11.github.io/brgr/logo.png">
+            </a>
+        </div>
+        <div class="flex flex-col md:gap-5 gap-3 footer-2">
+            <p>732/21 Second Street, Dummy Adress<br>Street, For display.</p>
+            <p class="font-semibold"><a href="#">T: +65 (0) 76-890-214</a><br><a href="#">E: bookings@grandburger.com</a></p>
+        </div>
+        <div class="flex md:justify-end justify-start md:mt-0 mt-8 footer-3">
+            <ul>
+                <li><a class="transition-colors duration-300 hover:text-slate-500" href="#">Twitter</a></li>
+                <li><a class="transition-colors duration-300 hover:text-slate-500" href="#">Facebook</a></li>
+                <li><a class="transition-colors duration-300 hover:text-slate-500" href="#">Instagram</a></li>
+                <li><a class="transition-colors duration-300 hover:text-slate-500" href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="md:col-span-2 flex justify-between items-center mt-16 pt-5 border-t-2">
+            <p class="font-medium footer-4">@copyright 2024 designed by <a class="pb-[1px] border-b-2 border-black" href="https://www.instagram.com/_.krish_.dungrani">Krish</a> developed by <a class="pb-[1px] border-b-2 border-black" href="https://www.instagram.com/dhr.the">Dhruv</a></p>
+            <p class="font-Pacifico text-3xl font-thin md:block hidden footer-5">orignal</p>
+        </div>
+    </footer>
+    <script src="https://gekyume11.github.io/brgr/scrollReveal.js"></script>
+</body>
+</html>
